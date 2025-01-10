@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="user-card-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">Student</div>
+        <div class="links">
+            <a href="#">Login</a>
+            <a href="#">Signup</a>
+        </div>
+    </nav>
+    <h1 id="head-title">Welcome To this page</h1>
+    <section>
+        <form>
+            <div class="inp-fields">
+                <div style="margin-bottom: 20px;">
+                    <label>*username</label>
+                    <input type="text" id="user" placeholder="enter username" required>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label>Email</label>
+                    <input type="email" id="uemail" placeholder="enter email">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label>password</label><br>
+                    <input type="password" id="upassword" placeholder="enter password">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label>Date</label><br>
+                    <input type="date" id="udate">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label>City</label><br>
+                    <input type="text" id="ucity" placeholder="enter your city">
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <button id="from-btn">Set</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <div class="mysection">
+        <card id="mycard">
+            <div class="card-content">
+                <div>
+                    <img src="webdcs.png" alt="user" width="200" height="200" style="border-radius: 50px;">
+                </div>
+                <div>
+                    <div>
+                        <h3 style="text-decoration: underline; text-align: right;"><i class="fa-solid fa-check" style="color: white; font-size: 0.9em; border-radius: 100%; background: green;padding: 2px;"></i>Active</h3>
+                        <ul>
+                            <li>Id: <span id="card-id">01</span></li>
+                            <li>Username: <span id="card-name">Joel Doel</span></li>
+                            <li>Email: <span id="card-email">joel12@gmail.com</span></li>
+                            <li>City: <span id="card-city">Landon</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Card No</h3>
+                        <p id="cardno">40344349544001</p>
+                    </div>
+                </div>
+            </div>
+        </card>
+                <div id="table-scroll">
+                 <h3 id="m-hint" style="color: white;"> <i class="fa-solid fa-arrow-right"></i>Scroll </h3>
+                    <table id="table">
+        <tr id="thead">
+            <th>Id</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>City</th>
+            <th>Choose</th>
+        </tr>
+        <tbody id="tbody"></tbody>
+         </table>
+        </div>
+    </div>
+    <script src="user-card.js"></script>
+</body>
+
+</html>
